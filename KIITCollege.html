@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>College Website</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f4f6f4; /* light neutral */
+        }
+
+        /* Header */
+        .header {
+    background-color: #0b3c2d;
+    color: white;
+    padding: 15px;
+    text-align: center;
+        }
+
+        .header img {
+    height: 60px;
+    display: block;
+    margin: 0 auto;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        /* Layout */
+        .main {
+            display: flex;
+            min-height: 90vh;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            width: 230px;
+            background-color: #1f6f43; /* green shade */
+            padding: 20px;
+        }
+
+        .sidebar h2 {
+            color: white;
+            margin-top: 0;
+        }
+
+        .sidebar a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            margin: 12px 0;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .sidebar a:hover {
+            text-decoration: underline;
+        }
+
+        /* Content */
+        .content {
+            flex: 1;
+            padding: 30px;
+            background-color: #f4f6f4;
+        }
+
+        .content h2 {
+            color: #0b3c2d;
+        }
+
+        .content h3 {
+            color: #1f6f43;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #0b3c2d;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+
+    <script>
+        function showSection(id) {
+            let sections = document.getElementsByClassName('section');
+            for (let i = 0; i < sections.length; i++) {
+                sections[i].style.display = 'none';
+            }
+            document.getElementById(id).style.display = 'block';
+        }
+    </script>
+</head>
+<body onload="showSection('home')">
+
+    <!-- Header -->
+    <div class="header">
+        <img src="KIIT.jpg" alt="College Logo">
+        <h1>Kalinga Institute of Industrial Technology</h1>
+    </div>
+
+    <!-- Main -->
+    <div class="main">
+
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <h2>Links</h2>
+            <a onclick="showSection('home')">Home</a>
+            <a onclick="showSection('about')">About College</a>
+            <a onclick="showSection('departments')">Departments</a>
+            <a onclick="showSection('admissions')">Admissions</a>
+            <a onclick="showSection('contact')">Contact Us</a>
+            <a onclick="showSection('StudentView')">Student View</a>
+            <a onclick="showSection('Admin')">Admin</a>
+        </div>
+
+        <!-- Content -->
+        <div class="content">
+
+            <!-- Home -->
+            <div id="home" class="section">
+                <h2>Welcome to Our College</h2>
+                <p>
+                    Our college is a premier institution dedicated to academic excellence,
+                    innovation, and overall student development. We provide a supportive
+                    learning environment that encourages curiosity, creativity, and
+                    critical thinking among students.
+                </p>
+
+                <h3>About the Institution</h3>
+                <p>
+                    Established with a vision to deliver quality education, our college
+                    offers a wide range of academic programs designed to meet global
+                    standards. We emphasize both theoretical knowledge and practical
+                    application to prepare students for real-world challenges.
+                </p>
+
+                <h3>Academic Excellence</h3>
+                <p>
+                    The college is supported by highly qualified and experienced faculty
+                    members who are committed to student success. Our curriculum is
+                    regularly updated to align with industry trends, emerging
+                    technologies, and research advancements.
+                </p>
+
+                <h3>Campus Life</h3>
+                <p>
+                    Our campus provides a vibrant and inclusive atmosphere where students
+                    can explore their interests beyond academics. Various cultural,
+                    technical, and sports activities are organized throughout the year to
+                    promote teamwork, leadership, and personal growth.
+                </p>
+
+                <h3>Facilities and Infrastructure</h3>
+                <p>
+                    We offer well-equipped classrooms, modern laboratories, a
+                    resource-rich library, and digital learning facilities. These
+                    resources ensure that students have access to the tools and
+                    environment needed for effective learning.
+                </p>
+
+                <h3>Our Mission</h3>
+                <p>
+                    Our mission is to empower students with knowledge, skills, and values
+                    that enable them to become responsible professionals and lifelong
+                    learners. We strive to foster innovation, ethical responsibility, and
+                    social commitment in every student.
+                </p>
+
+                <h3>Our Vision</h3>
+                <p>
+                    To be a leading educational institution recognized for excellence in
+                    teaching, research, and community engagement, producing graduates who
+                    contribute positively to society and the global workforce.
+                </p>
+            </div>
+
+            <!-- About College -->
+            <div id="about" class="section">
+                <h2>About Our College</h2>
+                <p>
+                    Our college is committed to excellence in education and overall
+                    student development.
+                </p>
+                <img src="KIITphoto.jpg" alt="College Campus" class="about-img">
+
+                <p>
+                    Our college is a center of academic excellence that aims to provide
+                    quality education and holistic development to students. We focus on
+                    nurturing young minds by creating a supportive and intellectually
+                    stimulating environment where students can grow academically,
+                    socially, and ethically.
+                </p>
+
+                <p>
+                    The institution offers a wide range of undergraduate and postgraduate
+                    programs designed to meet the evolving needs of industry and society.
+                    With experienced faculty members, well-structured curriculum, and
+                    modern teaching methodologies, the college ensures that students gain
+                    strong theoretical knowledge along with practical exposure.
+                </p>
+
+                <p>
+                    Our campus provides essential facilities such as well-equipped
+                    classrooms, laboratories, library resources, and spaces for
+                    extracurricular activities. We encourage students to participate in
+                    cultural events, technical activities, sports, and community service
+                    to build leadership qualities and teamwork skills.
+                </p>
+
+                <p>
+                    The college is committed to shaping responsible citizens with strong
+                    values, critical thinking abilities, and professional competence. By
+                    promoting innovation, discipline, and continuous learning, we strive
+                    to prepare students for successful careers and meaningful
+                    contributions to society.
+                </p>
+            </div>
+
+            <!-- Departments -->
+            <div id="departments" class="section">
+    <h2>Departments</h2>
+    <p>
+        Our college offers a diverse range of academic departments that focus on quality
+        education, practical learning, and research-oriented teaching. Each department is
+        equipped with experienced faculty members and modern facilities to support student
+        growth and academic excellence.
+    </p>
+
+    <h3>Academic Departments</h3>
+    <p>
+        The following table provides an overview of the major departments available in our
+        college along with the programs offered under each department.
+    </p>
+
+    <table border="1" cellpadding="10" cellspacing="0" width="100%">
+        <tr>
+            <th>Department Name</th>
+            <th>Programs Offered</th>
+            <th>Focus Area</th>
+        </tr>
+        <tr>
+            <td>Computer Science and Engineering</td>
+            <td>B.Tech, M.Tech</td>
+            <td>Software Development, Data Structures, Artificial Intelligence</td>
+        </tr>
+        <tr>
+            <td>Information Technology</td>
+            <td>B.Tech</td>
+            <td>Web Technologies, Networking, Databases</td>
+        </tr>
+        <tr>
+            <td>Electronics and Communication Engineering</td>
+            <td>B.Tech, M.Tech</td>
+            <td>Communication Systems, VLSI, Embedded Systems</td>
+        </tr>
+        <tr>
+            <td>Mechanical Engineering</td>
+            <td>B.Tech</td>
+            <td>Manufacturing, Thermal Engineering, Design</td>
+        </tr>
+        <tr>
+            <td>Civil Engineering</td>
+            <td>B.Tech</td>
+            <td>Structural Engineering, Construction, Environmental Engineering</td>
+        </tr>
+        <tr>
+            <td>Electrical Engineering</td>
+            <td>B.Tech</td>
+            <td>Power Systems, Control Systems, Electrical Machines</td>
+        </tr>
+        <tr>
+            <td>Humanities and Sciences</td>
+            <td>Common Courses</td>
+            <td>Mathematics, Physics, Chemistry, Communication Skills</td>
+        </tr>
+    </table>
+
+    <h3>Departmental Activities</h3>
+    <p>
+        Each department actively organizes workshops, seminars, guest lectures, industrial
+        visits, and student projects to enhance practical knowledge. Students are encouraged
+        to participate in research activities, competitions, and technical events conducted
+        at both national and international levels.
+    </p>
+
+    <h3>Our Approach</h3>
+    <p>
+        The departments work collaboratively to ensure interdisciplinary learning and
+        innovation. Through academic rigor and hands-on experience, we aim to develop
+        skilled professionals who are ready to meet industry and societal demands.
+    </p>
+</div>
+
+            <!-- Admissions -->
+            <div id="admissions" class="section">
+    <h2>Admissions</h2>
+
+    <p>
+        The admissions process at our college is designed to be transparent, fair, and
+        student-friendly. We welcome aspiring students from diverse backgrounds who are
+        eager to pursue quality education and build a successful academic and professional
+        career.
+    </p>
+
+    <h3>Admission Process</h3>
+    <p>
+        Admissions are offered based on eligibility criteria, entrance examinations, and
+        merit as per university and government guidelines. Applicants are advised to
+        carefully review the requirements before applying.
+    </p>
+
+    <h3>Eligibility Criteria</h3>
+    <table border="1" cellpadding="10" cellspacing="0" width="100%">
+        <tr>
+            <th>Program</th>
+            <th>Minimum Qualification</th>
+            <th>Selection Criteria</th>
+        </tr>
+        <tr>
+            <td>Undergraduate Programs</td>
+            <td>10+2 or equivalent from a recognized board</td>
+            <td>Merit / Entrance Examination</td>
+        </tr>
+        <tr>
+            <td>Postgraduate Programs</td>
+            <td>Bachelor’s degree in relevant discipline</td>
+            <td>Merit / Entrance Examination</td>
+        </tr>
+        <tr>
+            <td>Doctoral Programs</td>
+            <td>Master’s degree in relevant discipline</td>
+            <td>Entrance Test and Interview</td>
+        </tr>
+    </table>
+
+    <h3>How to Apply</h3>
+    <p>
+        Candidates can apply for admission by filling out the application form available
+        through the college admission office or official website. Applicants must submit
+        the required documents within the specified deadlines to complete the admission
+        process.
+    </p>
+
+    <h3>Required Documents</h3>
+    <p>
+        Applicants are required to submit academic mark sheets, transfer certificate,
+        identity proof, passport-sized photographs, and other relevant documents as
+        notified during the admission process.
+    </p>
+
+    <h3>Important Dates</h3>
+    <p>
+        Admission notifications, application deadlines, entrance examination dates, and
+        counseling schedules will be announced on the official college notice board and
+        website. Candidates are advised to regularly check for updates.
+    </p>
+
+    <h3>Contact for Admissions</h3>
+    <p>
+        For any admission-related queries, students may contact the college admission
+        office during working hours. Our admission team is always ready to assist and guide
+        applicants throughout the process.
+    </p>
+</div>
+
+            <!-- Contact -->
+            <div id="contact" class="section">
+    <h2>Contact Us</h2>
+
+    <p>
+        We are always happy to assist students, parents, and visitors with their queries.
+        Please feel free to reach out to us for any information related to admissions,
+        academics, departments, or campus facilities.
+    </p>
+
+    <h3>College Address</h3>
+    <p>
+        Kalinga Institute of Industrial Technology<br>
+        Patia, Bhubaneswar<br>
+        Odisha, India
+    </p>
+
+    <h3>Contact Details</h3>
+    <table border="1" cellpadding="10" cellspacing="0" width="100%">
+        <tr>
+            <th>Department</th>
+            <th>Contact Information</th>
+        </tr>
+        <tr>
+            <td>General Enquiry</td>
+            <td>
+                Phone: +91 98765 43210<br>
+                Email: info@kiit.ac.in
+            </td>
+        </tr>
+        <tr>
+            <td>Admissions Office</td>
+            <td>
+                Phone: +91 91234 56789<br>
+                Email: admissions@kiit.ac.in
+            </td>
+        </tr>
+        <tr>
+            <td>Examination Section</td>
+            <td>
+                Phone: +91 99887 76655<br>
+                Email: exams@kiit.ac.in
+            </td>
+        </tr>
+        <tr>
+            <td>Training & Placement Cell</td>
+            <td>
+                Phone: +91 90000 11122<br>
+                Email: placement@kiit.ac.in
+            </td>
+        </tr>
+    </table>
+
+    <h3>Office Hours</h3>
+    <p>
+        The college administrative office is open from Monday to Friday,
+        9:00 AM to 5:00 PM. Visitors are requested to contact the respective
+        department during office hours for quick assistance.
+    </p>
+
+    <h3>Visit Our Campus</h3>
+    <p>
+        Prospective students and parents are welcome to visit our campus to
+        learn more about our academic programs and facilities. Prior
+        appointment is recommended for guided campus visits.
+    </p>
+</div>
+
+<!-- Student View -->
+<div id="StudentView" class="section">
+
+<h2>Student Details</h2>
+<p>Enter your Roll Number to view your details.</p>
+
+<form method="get" action="student_details.php">
+
+<table>
+<tr>
+<td>Roll Number</td>
+<td><input type="text" name="roll" required></td>
+</tr>
+
+<tr>
+<td colspan="2" style="text-align:center;">
+<button type="submit">View Details</button>
+</td>
+</tr>
+</table>
+
+</form>
+
+</div>
+
+    <!-- Admin -->
+<div id="Admin" class="section">
+
+    <h2>Admin Login</h2>
+    <p>Please enter admin credentials to continue.</p>
+
+    <form class="admin-form" method="post" action="admin_login.php">
+        <table>
+            <tr>
+                <td>Username</td>
+                <td><input type="text" name="username"></td>
+            </tr>
+
+            <tr>
+                <td>Password</td>
+                <td><input type="password" name="password"></td>
+            </tr>
+
+            <tr>
+                <td colspan="2" style="text-align:center;">
+                    <button type="submit">Login</button>
+                    <button type="reset">Reset</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</div>
+</body>
+</html>
